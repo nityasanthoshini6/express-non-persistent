@@ -1,0 +1,13 @@
+{
+  "name": "my-express-app",
+  "version": "1.0.0",
+  "description": "A non-persistent product API built with Express.js",
+  "author": "Santhoshini",
+  "main": "products-non-persistent.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "type": "module"
+}
