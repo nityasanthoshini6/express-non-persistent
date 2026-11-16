@@ -1,55 +1,85 @@
+# Express.js Non-Persistent CRUD Application
 
-# Express Non-Persistent Application
+## Project Description
 
-A simple Node.js application built using Express.js to demonstrate non-persistent data storage.
+This project is a REST API developed using Node.js and Express.js. It performs CRUD (Create, Read, Update, Delete) operations on products using an in-memory JavaScript array.
+
+Since the application uses an array instead of a database, product data is temporary and will be lost whenever the server restarts.
+
+## Live Demo
+
+**Live Application:** https://express-non-persistent.onrender.com/
 
 ## Technologies Used
+
 - Node.js
 - Express.js
 - JavaScript
+- REST API
+- Postman (for API testing)
 
-## Features
-- Express server setup
-- Handles HTTP requests
-- Stores data temporarily in memory
-- Data is lost when the server restarts
+## CRUD Operations
 
-## Installation
+| HTTP Method | Endpoint | Description |
+|---|---|---|
+| POST | `/products` | Create a new product |
+| GET | `/products` | Get all products |
+| GET | `/products/:id` | Get a product by ID |
+| PUT | `/products/:id` | Update a product |
+| DELETE | `/products/:id` | Delete a product |
 
-Clone the repository:
+## Installation and Setup
 
-```bash
-git clone YOUR_GITHUB_REPOSITORY_URL
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/nityasanthoshini6/express-non-persistent.git
+   ```
+
+2. Navigate to the project folder:
+
+   ```bash
+   cd express-non-persistent
+   ```
+
+3. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Start the server:
+
+   ```bash
+   node server.js
+   ```
+
+5. Open the application:
+
+   ```text
+   http://localhost:4000
+   ```
+
+## Example Product JSON
+
+```json
+{
+  "id": 1,
+  "name": "Laptop",
+  "price": 50000
+}
 ```
 
-Navigate to the project folder:
+## Important Note
 
-```bash
-cd express-non-persistent
-```
-
-Install dependencies:
-
-```bash
-npm install
-```
-
-## Run the Application
-
-```bash
-node server.js
-```
-
-The application runs locally at:
-
-http://localhost:3000
+This application uses an in-memory JavaScript array for storing product details. Therefore, all product data will be lost when the server restarts.
 
 ## Deployment
 
-Deployed using Render.
+The application is deployed using Render.
 
-Live URL: Add your Render URL here.
+**Live URL:** https://express-non-persistent.onrender.com/
 
 ## Author
 
-Santhoshini
+**Santhoshini**
